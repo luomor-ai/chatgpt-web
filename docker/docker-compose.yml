@@ -7,8 +7,8 @@ services:
       - 3002:3002
     environment:
       OPENAI_API_KEY: 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
-      # 反向代理，可选
-      API_REVERSE_PROXY: https://openai-api.luomor.com
+      # API接口地址，可选，设置 OPENAI_API_KEY 时可用
+      OPENAI_API_BASE_URL: https://openai-api.luomor.com
       # 每小时最大请求次数，可选，默认无限
       MAX_REQUEST_PER_HOUR: 0
       # 超时，单位毫秒，可选
