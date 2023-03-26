@@ -4,7 +4,7 @@ services:
   app:
     image: yiluxiangbei/chatgpt-web # 总是使用latest,更新时重新pull该tag镜像即可
     ports:
-      - 3002:3002
+      - 8091:3002
     environment:
       OPENAI_API_KEY: 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
       # API接口地址，可选，设置 OPENAI_API_KEY 时可用
