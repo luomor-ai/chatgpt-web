@@ -13,4 +13,8 @@ http://localhost:3002/
 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
 
 sudo docker tag chatgpt-web yiluxiangbei/chatgpt-web
+sudo docker push yiluxiangbei/chatgpt-web
+
+sudo docker-compose up -d
+sudo docker-compose ps
 ```
