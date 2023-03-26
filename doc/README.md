@@ -18,4 +18,6 @@ sudo docker push yiluxiangbei/chatgpt-web
 sudo docker-compose up -d
 sudo docker-compose ps
 sudo docker-compose logs -f
+
+docker exec -it docker_app_1 sh
 ```

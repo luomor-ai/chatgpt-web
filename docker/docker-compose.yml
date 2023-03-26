@@ -6,7 +6,7 @@ services:
     ports:
       - 8091:3002
     environment:
-      OPENAI_API_KEY: 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
+      OPENAI_API_KEY: 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
       # API接口地址，可选，设置 OPENAI_API_KEY 时可用
       OPENAI_API_BASE_URL: https://openai-api.luomor.com
       # 每小时最大请求次数，可选，默认无限
