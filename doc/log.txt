@@ -1,0 +1,31 @@
+sendMessage (50 tokens) {
+app_1    |   max_tokens: 1000,
+app_1    |   model: 'gpt-3.5-turbo',
+app_1    |   temperature: 0.8,
+app_1    |   top_p: 1,
+app_1    |   presence_penalty: 1,
+app_1    |   messages: [
+app_1    |     {
+app_1    |       role: 'system',
+app_1    |       content: 'You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible.\n' +
+app_1    |         'Knowledge cutoff: 2021-09-01\n' +
+app_1    |         'Current date: 2023-03-26'
+app_1    |     },
+app_1    |     { role: 'user', content: 'hello', name: undefined }
+app_1    |   ],
+app_1    |   stream: true
+app_1    | }
+app_1    | ChatGPTError: ChatGPT error 401: {
+app_1    |     "error": {
+app_1    |         "message": "Incorrect API key provided: sk-vay3u***************************************08aF. You can find your API key at https://platform.openai.com/account/api-keys.",
+app_1    |         "type": "invalid_request_error",
+app_1    |         "param": null,
+app_1    |         "code": "invalid_api_key"
+app_1    |     }
+app_1    | }
+app_1    |
+app_1    |     at fetchSSE (file:///app/node_modules/.pnpm/chatgpt@5.1.2/node_modules/chatgpt/build/index.js:55:19)
+app_1    |     at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+app_1    |   statusCode: 401,
+app_1    |   statusText: 'Unauthorized'
+app_1    | }
