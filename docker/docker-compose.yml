@@ -9,6 +9,8 @@ services:
       OPENAI_API_KEY: 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
       # API接口地址，可选，设置 OPENAI_API_KEY 时可用
       OPENAI_API_BASE_URL: https://openai-api.luomor.com
+      # API模型，可选，设置 OPENAI_API_KEY 时可用
+      OPENAI_API_MODEL: text-davinci-003
       # 每小时最大请求次数，可选，默认无限
       MAX_REQUEST_PER_HOUR: 0
       # 超时，单位毫秒，可选
