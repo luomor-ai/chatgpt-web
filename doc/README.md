@@ -22,6 +22,6 @@ sudo docker-compose up -d
 sudo docker-compose ps
 sudo docker-compose logs -f
 
-docker exec -it docker_app_1 sh
-docker rmi `docker images|grep none |  awk '{print $3}'`
+sudo docker exec -it docker_app_1 sh
+sudo docker rmi `docker images|grep none |  awk '{print $3}'`
 ```
