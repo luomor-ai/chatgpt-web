@@ -29,3 +29,32 @@ app_1    |     at processTicksAndRejections (node:internal/process/task_queues:9
 app_1    |   statusCode: 401,
 app_1    |   statusText: 'Unauthorized'
 app_1    | }
+
+Network Error
+
+app_1    | Server is running on port 3002
+app_1    | sendMessage (50 tokens) {
+app_1    |   max_tokens: 1000,
+app_1    |   model: 'gpt-3.5-turbo',
+app_1    |   temperature: 0.8,
+app_1    |   top_p: 1,
+app_1    |   presence_penalty: 1,
+app_1    |   messages: [
+app_1    |     {
+app_1    |       role: 'system',
+app_1    |       content: 'You are ChatGPT, a large language model trained by OpenAI. Answer as concisely as possible.\n' +
+app_1    |         'Knowledge cutoff: 2021-09-01\n' +
+app_1    |         'Current date: 2023-04-12'
+app_1    |     },
+app_1    |     { role: 'user', content: 'hello', name: undefined }
+app_1    |   ],
+app_1    |   stream: true
+app_1    | }
+app_1    | TimeoutError: OpenAI timed out waiting for response
+app_1    |     at file:///app/node_modules/.pnpm/p-timeout@6.1.1/node_modules/p-timeout/index.js:70:24
+app_1    |     at new Promise (<anonymous>)
+app_1    |     at pTimeout (file:///app/node_modules/.pnpm/p-timeout@6.1.1/node_modules/p-timeout/index.js:48:28)
+app_1    |     at ChatGPTAPI.sendMessage (file:///app/node_modules/.pnpm/chatgpt@5.1.2/node_modules/chatgpt/build/index.js:319:14)
+app_1    |     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+app_1    |     at async chatReplyProcess (file:///app/build/index.mjs:103:22)
+app_1    |     at async file:///app/build/index.mjs:216:5

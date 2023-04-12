@@ -10,7 +10,8 @@ services:
       # API接口地址，可选，设置 OPENAI_API_KEY 时可用
       # OPENAI_API_BASE_URL: https://openai-api.luomor.com
       # 反向代理，可选
-      API_REVERSE_PROXY: https://bypass.churchless.tech/api/conversation
+      # API_REVERSE_PROXY: https://bypass.churchless.tech/api/conversation
+      API_REVERSE_PROXY: https://openai-api.luomor.com
       # API模型，可选，设置 OPENAI_API_KEY 时可用
       OPENAI_API_MODEL: gpt-3.5-turbo
       # 每小时最大请求次数，可选，默认无限
