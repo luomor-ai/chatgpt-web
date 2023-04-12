@@ -6,11 +6,13 @@ services:
     ports:
       - 8091:3002
     environment:
-      OPENAI_API_KEY: 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
+      OPENAI_API_KEY: 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
       # API接口地址，可选，设置 OPENAI_API_KEY 时可用
-      OPENAI_API_BASE_URL: https://openai-api.luomor.com
+      # OPENAI_API_BASE_URL: https://openai-api.luomor.com
+      # 反向代理，可选
+      API_REVERSE_PROXY: https://bypass.churchless.tech/api/conversation
       # API模型，可选，设置 OPENAI_API_KEY 时可用
-      OPENAI_API_MODEL: text-davinci-003
+      OPENAI_API_MODEL: gpt-3.5-turbo
       # 每小时最大请求次数，可选，默认无限
       MAX_REQUEST_PER_HOUR: 0
       # 超时，单位毫秒，可选
