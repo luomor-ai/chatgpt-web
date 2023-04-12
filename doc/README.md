@@ -12,6 +12,9 @@ http://localhost:3002/
 
 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
 
+https://bypass.churchless.tech/api/conversation
+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
+
 sudo docker tag chatgpt-web yiluxiangbei/chatgpt-web
 sudo docker push yiluxiangbei/chatgpt-web
 
